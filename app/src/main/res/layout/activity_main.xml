@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="402dp"
+        android:layout_height="539dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="60dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtId_barang"
+                android:layout_width="315dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="Id Barang"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtNama"
+                android:layout_width="315dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="Nama Barang"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtJumlah"
+                android:layout_width="315dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="Jumlah Barang"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtLokasi_ruang"
+                android:layout_width="315dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="Lokasi Gedung"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtLokasi_gedung"
+                android:layout_width="315dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="Lokasi Ruang"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="16dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/btnChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="34dp"
+                android:text="Pilih Gambar" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Tambah Data" />
+
+            <Button
+                android:id="@+id/btnList"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:text="Lihat Data" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
